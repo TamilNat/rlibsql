@@ -19,7 +19,4 @@ EXPOSE 8080
 # Expose gRPC port for replication (optional)
 EXPOSE 5001
 
-# Volume for database persistence
-VOLUME ["/var/lib/sqld"]
-
 CMD []
