@@ -10,7 +10,10 @@ ENV SQLD_DB_PATH=/var/lib/sqld/db.sqlite
 # Node type: primary
 ENV SQLD_NODE=primary
 
+# Enable HTTP endpoint
+ENV SQLD_ENABLE_HTTP_API=1
+
 # Expose HTTP port for libsql client connections
 EXPOSE 8080
 
-CMD ["sqld"]
+CMD ["sqld", "--http-listen-addr", "0.0.0.0:8080"]
