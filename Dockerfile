@@ -19,4 +19,4 @@ EXPOSE 8080
 # Expose gRPC port for replication (optional)
 EXPOSE 5001
 
-CMD []
+CMD ["sqld"]
