@@ -4,6 +4,9 @@ FROM ghcr.io/tursodatabase/libsql-server:latest
 # HTTP listen address (required for Railway)
 ENV SQLD_HTTP_LISTEN_ADDR=0.0.0.0:8080
 
+# Database path
+ENV SQLD_DB_PATH=/var/lib/sqld/db.sqlite
+
 # Node type: primary
 ENV SQLD_NODE=primary
 
